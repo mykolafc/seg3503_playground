@@ -13,4 +13,4 @@ once there in the terminal, execute these commands:
 
 if using the elixir code, you will be prompted to enter another command. 
  
- % Newmath.div(x,y)   # where x is the numerator and y is the denominator 
+ % NewmathEx.div(x,y)   # where x is the numerator and y is the denominator 
