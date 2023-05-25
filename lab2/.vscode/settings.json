@@ -1,0 +1,8 @@
+{
+    "java.project.referencedLibraries": [
+        "lib/*/.jar",
+        "/Users/mykola/Downloads/junit-jupiter-engine-5.2.0.jar",
+        "/Users/mykola/Downloads/junit-jupiter-api-5.2.0.jar",
+        "/Users/mykola/Downloads/junit-platform-console-standalone-1.10.0-M1.jar"
+    ]
+}
