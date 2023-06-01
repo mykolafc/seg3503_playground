@@ -32,7 +32,10 @@ Test Run using bin/test:
 
 ![image](https://github.com/mykolafc/seg3503_playground/assets/90726597/4d0e8402-50cf-454a-9463-a7b14394ebfb)
 
-Typical explicit test cases that have exception:
+Typical explicit test case that doesn't use exceptions
+![image](https://github.com/mykolafc/seg3503_playground/assets/90726597/ee1b92fa-b668-47a2-bb8b-2ae054a97752)
+
+Explicit test cases that have exceptions
 ![image](https://github.com/mykolafc/seg3503_playground/assets/90726597/ca9c6dbd-2451-46ef-b1d5-908e3eba1d37)
 
 Parametrized test values for test that run OK and return a Date
