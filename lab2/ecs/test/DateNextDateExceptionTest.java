@@ -13,13 +13,11 @@ public class DateNextDateExceptionTest{
     private int year;
     private int month;
     private int day;
-    private IllegalArgumentException expectedResult;
 
-    public DateNextDateExceptionTest(int year, int month, int day, IllegalArgumentException expected){
+    public DateNextDateExceptionTest(int year, int month, int day){
         this.year = year;
         this.month = month;
         this.day = day;
-        this.expectedResult = expected;
     }
 
     
