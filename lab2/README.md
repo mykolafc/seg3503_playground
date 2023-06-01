@@ -5,3 +5,7 @@
 | Date | Summer 2023 |
 | Professor | Mohammed Ali Ibrahim mibrahi3@uottawa.ca|
 | TA | Joseph Abonasara jabon028@uotttawa.ca  |
+
+JUnit Parametrized Runner
+
+Exercise 2
