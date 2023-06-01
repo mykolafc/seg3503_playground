@@ -1,5 +1,6 @@
 import static org.junit.jupiter.api.Assertions.*;
 
+import org.junit.experimental.theories.suppliers.TestedOn;
 import org.junit.jupiter.api.Test;
 
 class DateTest {
@@ -150,9 +151,21 @@ class DateTest {
   }
 
   @Test
-  void nextDate_invalid_tc21() { //toString 
+  void toString_invalid_tc21() { //toString 
     Date date = new Date(2003, 07 , 07);
     assertEquals("2003/July/07", date.toString());
   }
-  
+
+  @Test
+  void isLeapYear_tc22() {
+    Date today = new Date(2012, 9, 28);
+    assertEquals(today.isLeapYear(), true);
+  }
+
+  @Test
+  void isLeapYear_tc23() {
+    Date today = new Date(2013, 7, 7);
+    assertEquals(today.isLeapYear(), false);
+  }
+
 }
