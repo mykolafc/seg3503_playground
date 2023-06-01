@@ -201,6 +201,24 @@ class DateTest {
     assertEquals(invalid1.equals(invalid2), false);
   }
 
+  @Test
+  void isEquals_tc29() {//differnet year
+    Date today = new Date(2013, 7, 7);
+    Date other=new Date(2014, 7, 7);
+    assertEquals(today.equals(other), false);
+  }
+  @Test
+  void isEquals_tc30() {//differnet month
+    Date today = new Date(2013, 7, 7);
+    Date other=new Date(2013, 8, 7);
+    assertEquals(today.equals(other), false);
+  }
+  @Test
+  void isEquals_tc31() {//differnet day
+    Date today = new Date(2013, 7, 7);
+    Date other=new Date(2013, 7, 8);
+    assertEquals(today.equals(other), false);
+  }
 
 
 }
