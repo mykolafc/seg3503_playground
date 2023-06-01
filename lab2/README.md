@@ -22,12 +22,17 @@
 **JUnit Parametrized Runner**
 
 Output from Running the test
+![image](https://github.com/mykolafc/seg3503_playground/assets/90726597/85e5fd9d-99c3-4120-b29a-119475fe0bd8)
+![image](https://github.com/mykolafc/seg3503_playground/assets/90726597/3afdefd6-2d74-461d-8b26-682e629e0045)
+
 
 **Exercise 2**
 
 Test Run using bin/test:
+https://media.discordapp.net/attachments/1111399394701488190/1113970022763728937/Screen_Shot_2023-06-01_at_7.19.05_PM.png?width=1207&height=213 
 
 Typical explicit test cases that have exception:
+![image](https://github.com/mykolafc/seg3503_playground/assets/90726597/ca9c6dbd-2451-46ef-b1d5-908e3eba1d37)
 
 Parametrized test values for test that run OK and return a Date
 
