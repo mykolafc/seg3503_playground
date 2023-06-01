@@ -175,10 +175,30 @@ class DateTest {
   }
 
   @Test
-  void isEquals_tc25() {
+  void isEquals_tc25() {//different
     Date today = new Date(2013, 7, 7);
     Date other=new Date(2013, 7, 8);
     assertEquals(today.equals(other), false);
+  }
+  
+  @Test
+  void isEquals_tc26() {//same
+    Date today = new Date(2013, 7, 7);
+    Date other=new Date(2013, 7, 7);
+    assertEquals(today.equals(other), true);
+  }
+  @Test
+  void isEquals_tc27() {//one invalid
+    Date today = new Date(2013, 7, 7);
+    Object invalid= new Object();
+    assertEquals(today.equals(invalid),false);
+  }
+
+  @Test
+  void isEquals_tc28() {//both invalid 
+    Object invalid1=new Object();
+    Object invalid2=new Object();
+    assertEquals(invalid1.equals(invalid2), false);
   }
 
 
