@@ -36,6 +36,10 @@ public class DateExceptionTest {
 		params.add(new Integer[] {-1,	10,	20,	0,0,0});
 		params.add(new Integer[] {1458,	15,	12,	0,0,0});
 		params.add(new Integer[] {1975, 6,-50,0,0,0});
+		params.add(new Integer[] {2014, 6, 39, 0, 0, 0});//set day
+		params.add(new Integer[] {2023, 9, 31, 0, 0, 0});
+		params.add(new Integer[] {2016, 2, 31, 0, 0, 0});
+		params.add(new Integer[] {2007, -4, 22, 0, 0, 0});//set month
 		return params;
 	}
 

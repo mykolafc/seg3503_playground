@@ -158,12 +158,12 @@ class DateTest {
 
   @Test
   void isLeapYear_tc22() {
-    Date today = new Date(2012, 9, 28);
+    Date today = new Date(2012, 2, 28);
     assertEquals(today.isLeapYear(), true);
   }
 
   @Test
-  void isLeapYear_tc23() {
+  void isLeapYear_invalid_tc23() {
     Date today = new Date(2013, 7, 7);
     assertEquals(today.isLeapYear(), false);
   }
