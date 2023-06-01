@@ -29,7 +29,7 @@ Output from Running the test
 **Exercise 2**
 
 Test Run using bin/test:
-
+![image](https://github.com/mykolafc/seg3503_playground/assets/90726597/dc56f2ce-d6b4-4bde-9f3f-924a5049eac6)
 
 Typical explicit test cases that have exception:
 ![image](https://github.com/mykolafc/seg3503_playground/assets/90726597/ca9c6dbd-2451-46ef-b1d5-908e3eba1d37)
