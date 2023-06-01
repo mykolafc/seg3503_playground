@@ -149,4 +149,10 @@ class DateTest {
     );
   }
 
+  @Test
+  void nextDate_invalid_tc21() { //toString 
+    Date date = new Date(2003, 07 , 07);
+    assertEquals("2003/July/07", date.toString());
+  }
+  
 }
