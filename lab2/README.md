@@ -35,5 +35,6 @@ Typical explicit test cases that have exception:
 ![image](https://github.com/mykolafc/seg3503_playground/assets/90726597/ca9c6dbd-2451-46ef-b1d5-908e3eba1d37)
 
 Parametrized test values for test that run OK and return a Date
+![image](https://github.com/mykolafc/seg3503_playground/assets/90726597/db7340dd-5232-4f13-bc9d-8250f14fb3a0)
 
 Parametrized test values for test cases that DO result in an exception
