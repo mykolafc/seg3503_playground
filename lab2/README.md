@@ -9,3 +9,10 @@
 **JUnit Parametrized Runner**
 
 **Exercise 2**
+Test Run using bin/test:
+
+Typical explicit test cases that have exception:
+
+Parametrized test values for test that run OK and return a Date
+
+Parametrized test values for test cases that DO result in an exception
