@@ -7,9 +7,11 @@
 | TA | Joseph Abonasara jabon028@uotttawa.ca  |
 
 **JUnit Parametrized Runner**
+
 Output from Running the test
 
 **Exercise 2**
+
 Test Run using bin/test:
 
 Typical explicit test cases that have exception:
