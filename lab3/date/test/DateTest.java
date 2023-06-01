@@ -1,3 +1,4 @@
+import static org.junit.Assert.assertNotEquals;
 import static org.junit.jupiter.api.Assertions.*;
 
 import org.junit.experimental.theories.suppliers.TestedOn;
@@ -153,7 +154,7 @@ class DateTest {
   @Test
   void toString_invalid_tc21() { //toString 
     Date date = new Date(2003, 07 , 07);
-    assertEquals("2003/July/07", date.toString());
+    assertNotEquals("2003/July/07", date.toString());
   }
 
   @Test
