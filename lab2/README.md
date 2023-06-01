@@ -29,7 +29,7 @@ Output from Running the test
 **Exercise 2**
 
 Test Run using bin/test:
-https://media.discordapp.net/attachments/1111399394701488190/1113970022763728937/Screen_Shot_2023-06-01_at_7.19.05_PM.png?width=1207&height=213 
+
 
 Typical explicit test cases that have exception:
 ![image](https://github.com/mykolafc/seg3503_playground/assets/90726597/ca9c6dbd-2451-46ef-b1d5-908e3eba1d37)
