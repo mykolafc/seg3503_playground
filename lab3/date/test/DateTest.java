@@ -168,4 +168,19 @@ class DateTest {
     assertEquals(today.isLeapYear(), false);
   }
 
+  @Test
+  void isLeapYear_tc24() {
+    Date today = new Date(2013, 7, 7);
+    assertEquals(today.isLeapYear(), false);
+  }
+
+  @Test
+  void isEquals_tc25() {
+    Date today = new Date(2013, 7, 7);
+    Date other=new Date(2013, 7, 8);
+    assertEquals(today.equals(other), false);
+  }
+
+
+
 }
