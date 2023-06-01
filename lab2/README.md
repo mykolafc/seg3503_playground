@@ -7,56 +7,16 @@
 | TA | Joseph Abonasara jabon028@uotttawa.ca  |
 
 **Exercise 1**
-Cas de Test 	Résultats Escomptés	Résultats Actuels	Verdict (Succes, Échec, Non-concluant) 
-1	Succes	
-Succes
-2	Succes	 
 
+![image](https://github.com/mykolafc/seg3503_playground/assets/90726597/ce73687e-bfcb-40d2-96a8-a6a53393fee1)
 
+![image](https://github.com/mykolafc/seg3503_playground/assets/90726597/f6c06a02-8073-41f3-93af-0596f1f51372)
 
+![image](https://github.com/mykolafc/seg3503_playground/assets/90726597/ae6655a7-d052-4c14-bd37-31d08af83f6f)
 
+![image](https://github.com/mykolafc/seg3503_playground/assets/90726597/ade92dd2-7b5a-440e-bc29-0933328e7411)
 
-
-
-
-
-
-
-
-
-
-
-
-
-	Succes
-3	Succes	 
-Succes
-4	Succes	 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-	Succes
-5	Échec	 
-Échec
-6	Échec	 
-Échec
-7	Échec	 
-Échec
-8	Échec	 
-Échec
+![image](https://github.com/mykolafc/seg3503_playground/assets/90726597/6bec9798-2f31-4d6c-8ffd-b04f9b1a98de)
 
 
 **JUnit Parametrized Runner**
