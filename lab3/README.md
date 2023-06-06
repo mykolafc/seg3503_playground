@@ -32,11 +32,18 @@ DateTest.java**
 
 **Test Cases Explained**
 
-We use Jacoco to know which functions in Date.java were yet to be completely tested with the already implemented tests. In this sense, whenever we saw a percentage less than 100% we would acces the method in order to see the branch coverage.  We contonued doing this until for the method isEndoftheYear() we kept getting 1/16 branches missing. Thus, we started decomposing the condition in order to get a flowchart and confirm if we were implementing the 16 conditions. While doing this, we only got 14 branches so we though our analysys was wrong and thus, rewrote the function as separated if statements rather than a refactored version because it was easier to read and validate. 
+We use Jacoco to know which functions in Date.java were yet to be completely tested with the already implemented tests. In this sense, whenever we saw a percentage less than 100% we would acces the method in order to see the branch coverage.  We contonued doing this until for the method isEndofMonth() we kept getting 1/16 branches missing. Thus, we started decomposing the condition in order to get a flowchart and confirm if we were implementing the 16 conditions. While doing this, we only got 14 branches so we though our analysys was wrong and thus, rewrote the function as separated if statements rather than a refactored version because it was easier to read and validate. 
+
+Original version:
+![image](https://github.com/mykolafc/seg3503_playground/assets/90726597/f56de610-b197-4d67-ac14-d26fa78f5ee9)
 
 Separated if statements:
+![image](https://github.com/mykolafc/seg3503_playground/assets/90726597/bae435ca-f10e-4296-9e0b-ff472ca4ff6b)
+
 In doing so, we manage to notice a redundancy in the if(this.month==2 && day==29 && leap) because every single time February has 29 days, it is a leap year. In this sense, we fixed that and ran jacoco, which now did give us 100%. 
 
 Refactored **CORRECTED** version. 
+
+![image](https://github.com/mykolafc/seg3503_playground/assets/90726597/7b761303-2049-4fb3-a8c3-0051c31578b8)
 
 However, we were confused still because we did not add any tests to reach 16, so we went to check the branches missing and turns out we had only 14 branches, which is what our initial analysys showed. In this sense, we were able to conclude that a redundancy in an if statement is equal to one accesible and one inaccesible branch, as an exception would be thrown. This explains why we could not get more than 15 branches and why after we remove it we got 14 brfances total, which we covered, but 14 is okay because again, it is redundant. 
