@@ -1,0 +1,14 @@
+{
+    "java.project.sourcePaths": [
+        "date\\src",
+        "date\\test"
+    ],
+    "java.project.outputPath": "date\\dist",
+    "java.project.referencedLibraries": [
+        "lib/**/*.jar",
+        "C:\\Users\\carog\\Downloads\\junit-jupiter-api-5.2.0 (1).jar",
+        "C:\\Users\\carog\\Downloads\\junit-jupiter-engine-5.2.0 (2).jar",
+        "c:\\Users\\carog\\Downloads\\junit-platform-console-standalone-1.10.0-M1.jar",
+        "date\\lib\\junit-platform-console-standalone-1.7.1.jar"
+    ]
+}
