@@ -73,4 +73,13 @@ class TicTest {
 		assertEquals(board.board[1][1],"o");
 	}
 
+	@Test
+	public void test10() {
+		Tic tic = new Tic(3, 3);
+		for(int i=0; i<3; i++){
+			tic.placeX(i,0);
+		}
+		assertTrue(tic.fullCol(1));
+	}
+
 }
