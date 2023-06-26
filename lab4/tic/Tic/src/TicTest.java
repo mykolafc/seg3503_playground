@@ -12,5 +12,12 @@ class TicTest {
 		assertEquals(board, board2);
 		//testing ability to declare a board
 	}
+
+
+	@Test
+	void test2() {
+		Tic tic = new Tic(3, 3);
+		assertEquals("_", tic.board[3][3]);
+	}
 	
 }
