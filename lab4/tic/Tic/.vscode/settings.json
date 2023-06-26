@@ -1,0 +1,8 @@
+{
+    "java.project.sourcePaths": ["src", "bin"],
+    "java.project.outputPath": "dist",
+    "java.project.referencedLibraries": [
+        "lib/**/*.jar",
+        "c:\\Users\\carog\\Downloads\\junit-platform-console-standalone-1.10.0-M1.jar"
+    ]
+}
