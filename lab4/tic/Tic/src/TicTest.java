@@ -12,5 +12,13 @@ class TicTest {
 		assertEquals(board, board2);
 		//testing ability to declare a board
 	}
+
+	//Caro
+	void test1() {
+		Tic board = new Tic(2, 3);
+		Tic board2 = new Tic(3,3);
+		assertEquals(board, board2);
+		//testing ability to declare a board
+	}
 	
 }
