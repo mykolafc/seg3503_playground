@@ -28,5 +28,12 @@ class TicTest {
 		assertEquals("_", tic.board[1][1]);
 	}
 
-	
+	@Test
+	void test4() {
+		Tic tic1 = new Tic(3, 3);
+		Tic tic2 = new Tic(3,4);
+		assertTrue(Tic.Equals(tic1, tic2));
+	}
+
+
 }
