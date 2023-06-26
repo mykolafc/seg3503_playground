@@ -14,11 +14,19 @@ class TicTest {
 	}
 
 	//Caro
+	@Test
 	void test1() {
 		Tic board = new Tic(2, 3);
 		Tic board2 = new Tic(3,3);
 		assertEquals(board, board2);
 		//testing ability to declare a board
 	}
+
+	@Test
+	void test2() {
+		Tic tic = new Tic(3,3);
+		assertEquals("_", tic.board[1][1]);
+	}
+
 	
 }
