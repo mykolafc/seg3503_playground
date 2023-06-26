@@ -72,4 +72,5 @@ class TicTest {
 		board.placeX(1,1);
 		assertEquals(board.board[1][1],"o");
 	}
+
 }
