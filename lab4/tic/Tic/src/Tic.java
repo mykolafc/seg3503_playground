@@ -56,4 +56,8 @@ public class Tic {
 	public String getValue(int i, int j){
 		return this.board[i][j];
 	}
+	 public static int boardSize(int indexI,int indexJ){
+
+        return indexI*indexJ;
+    }
 }
