@@ -25,9 +25,9 @@ class TicTest {
 	
 	@Test 
     public void test3(){
-        Tic board = new Tic(2, 3);
-		Tic board2 = new Tic(3,3);
-		assertEquals(board, board2);	
+       Tic board=new Tic(3,3);
+		board.placeO(1,1);
+		assertEquals(board.board[1][1],"x");	
     }
 
     @Test

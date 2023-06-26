@@ -80,6 +80,12 @@ public class Tic {
 		}
 	this.board[row][col] ="x";
 	}
+	public void placeO(int row,int col){
+		if(row>this.rows || col>this.cols){
+			return;
+		}
+	this.board[row][col] ="o";
+	}
 
 
 
