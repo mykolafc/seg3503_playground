@@ -1,3 +1,13 @@
+# seg3503_playground
+
+| Outline | Value |
+| --- | ---- |
+| Name | Mykola Forest-Chomyn and Carolina González |
+| Course | SEG 3503 |
+| Date | Summer 2023 |
+| Professor | Mohammed Ali Ibrahim mibrahi3@uottawa.ca|
+| TA | Joseph Abonasara jabon028@uotttawa.ca  |
+
 ![image](https://github.com/mykolafc/seg3503_playground/assets/90726597/123b06bd-afbf-4f4d-908b-7b48b6fcac38)
 
 
