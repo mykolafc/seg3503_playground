@@ -44,4 +44,16 @@ public class Tic {
         return board;
 
     }
+
+	public void writeX(int i, int j) {
+		this.board[i][j] = "X";
+	}
+
+	public void writeO(int i, int j) {
+		this.board[i][j] = "O";
+	}
+
+	public String getValue(int i, int j){
+		return this.board[i][j];
+	}
 }
