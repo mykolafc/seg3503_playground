@@ -45,14 +45,6 @@ public class Tic {
 
     }
 
-	public void writeX(int i, int j) {
-		this.board[i][j] = "X";
-	}
-
-	public void writeO(int i, int j) {
-		this.board[i][j] = "O";
-	}
-
 	public String getValue(int i, int j){
 		return this.board[i][j];
 	}
@@ -85,6 +77,26 @@ public class Tic {
 			return;
 		}
 	this.board[row][col] ="o";
+	}
+
+	public boolean fullRow(int row) {
+		String value = this.board[row][0];
+		for(int i=0; i<this.cols; i++){
+			if(this.board[row][i]!=value){
+				return false;
+			}
+		}
+		return true;
+	}
+
+	public boolean fullCol(int col) {
+		String value = this.board[0][col];
+		for(int i=0; i<this.rows; i++){
+			if(this.board[i][col]!=value){
+				return false;
+			}
+		}
+		return true;
 	}
 
 

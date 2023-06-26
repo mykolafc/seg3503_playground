@@ -43,10 +43,28 @@ class TicTest {
 	}
 
 	@Test
+	public void test6() {
+		Tic tic = new Tic(3, 3);
+		for(int i=0; i<3; i++){
+			tic.board[0][i] = "X";
+		}
+		assertTrue(tic.fullRow(1));
+	}
+
+	@Test
     public void test7() {
         String[][] result = {{"_","_","_"},{"_","_","_"}};
         assertTrue(Arrays.deepEquals(result,tic.emptyboard(4,3)));//2
     }
+
+	@Test
+	public void test8() {
+		Tic tic = new Tic(3, 3);
+		for(int i=0; i<3; i++){
+			tic.board[i][0] = "O";
+		}
+		assertTrue(tic.fullCol(1));
+	}
 
 	@Test
 	public void test9(){
