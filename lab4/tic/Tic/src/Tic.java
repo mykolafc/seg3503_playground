@@ -73,4 +73,14 @@ public class Tic {
         return board;
 
     }
+
+	public void placeX(int row,int col){
+		if(row>this.rows || col>this.cols){
+			return;
+		}
+	this.board[row][col] ="x";
+	}
+
+
+
 }
