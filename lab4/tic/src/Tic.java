@@ -1,4 +1,4 @@
-
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class Tic {
 	String[][] board;
@@ -99,6 +99,52 @@ public class Tic {
 		return true;
 	}
 	
+/**
+	 * Get all the empty cells
+	 * @param row
+	 * @param col
+	 * @return 	count: count the number of empty cells
+	 * 			-1: parameter error
+	 */
+	public int getAllEmpty(int row, int col) {
+		int count = 0;
+		for(int i = 0; i<row; i++) {
+			for(int j = 0; j<col; j++) {
+				
+				if(board[i][j] == "_") {
+					count++;
+				}
+			}
+		}
+		return count;
+	}
 
+	
+	public boolean add(int row, int col, String value) {
+		row--;
+		col--;
+		if(row < 0 || row >= this.rows || col < 0 || col >=this.cols) {
+			return false;// "" is caused by an invalid row/col
+		}
+		board[row][col] = value;
+		return true;
+	}
 
+	public int isOccupiedX(int row, int col) {
+		row--;
+		col--;
+		if(row < 0 || row >= this.rows || col < 0 || col >= this.cols) {
+			return -1;// "" is caused by an invalid row/col
+		}
+		if(board[row][col] == "X") {
+			return 1;
+		}
+		else if (board[row][col] == "O"){
+			return 0;
+		}
+		else {
+			return 0;
+		}
+	}
+	
 }

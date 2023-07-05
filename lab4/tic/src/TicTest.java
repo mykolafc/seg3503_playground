@@ -81,5 +81,40 @@ class TicTest {
 		}
 		assertTrue(tic.fullCol(1));
 	}
+	@Test
+	public void test11() {
+		Tic board = new Tic(3,3);
+		board.add(2, 1, "X");
 
+
+		//Good test
+		assertEquals(8, board.getAllEmpty(3,3));
+
+	}
+	@Test
+void TestIsOccupiedX() {
+		Tic board = new Tic(3,3);
+		
+		board.add(1, 2, "X");
+		board.add(1, 3, "X");
+			
+		//Good tests		
+		//found an X
+		int v5 = board.isOccupiedX(1, 2);
+		assertEquals(1, v5);
+		
+		//found an O or an empty one
+		int v6 = board.isOccupiedX(1, 3);
+		assertEquals(1,v6);
+	}
+
+	@Test
+	void TestTrun() {
+		Tic board = new Tic(3,3);
+		String turnTest = board.turn;
+
+		//Good test
+		assertEquals("X",turnTest);
+
+	}
 }
