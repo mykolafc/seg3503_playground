@@ -1,136 +1,84 @@
-# SEG3503_playground
+# seg3503_playground
+
 | Outline | Value |
-| --- | --- |
+| --- | ---- |
+| Name | Mykola Forest-Chomyn and Carolina González |
 | Course | SEG 3503 |
 | Date | Summer 2023 |
-| Professor |  Mohamed Ali Ibrahim  |
-| TA |  Abonasara Joseph |
+| Professor | Mohammed Ali Ibrahim mibrahi3@uottawa.ca|
+| TA | Joseph Abonasara jabon028@uotttawa.ca  |
 
 # Grades
 
-Stub code:
+<img width="857" alt="GradesCalculator" src="https://github.com/mykolafc/seg3503_playground/assets/90519945/8b4939d3-d5cf-4d73-86a8-7b87c629ef9a">
+
+On a ajouté ce stub de code afin de pouvoir démontrer les valeurs possibles une fois que la calculatrice de notes de cours est fonctionnelle.
+Pour l'instant, ce code ne fait que retourner une des valeurs possibles de façon aléatoire.
 
 
-Output with stub code:
+## Résultat sur l'application web
 
+<img width="806" alt="WebAppOutput" src="https://github.com/mykolafc/seg3503_playground/assets/90519945/ac1d0486-d47d-40ca-bc1e-2e20323e9558">
 
-Error after Assignment2 code replacement:
+Avec le stub de code précédent, nous pouvons maintenant voir le résultat de la calculatrice démontré sur l'application web. Par contre, puisque le stub ne retourne que des valeurs aléatoires, le résultat n'aura pas de sens et n'est pas affecté par les valeurs entrées. Additionnellement, les valeurs entre-elles n'ont pas de sens (i.e. la note numérique de '5' devrait comprendre un poucentage de '50%' mais la calculatrice démontre '80%' au lieu)
+
+## Erreur après implémentation
+
+<img width="990" alt="Erreur" src="https://github.com/mykolafc/seg3503_playground/assets/90519945/8bfda712-fe11-4af7-b5cf-393d828f4018">
+
+L'erreur qui apparait en executant le programme grades est visiblement sans rapport au code de la calculatrice que nous avons ajouté. Cette erreur est reliée au framework Phoenix et son service d'hébergement web.
 
 
 # Twitter
 
-Tests (TwitterTest.java):
+### TwitterTest.java - Test Cases:
+On a implementé les 4 tests manquanyt (comme indiqué dans les code en forme des commentaires):
 
-    // @Test
-    // void isMentionned_lookForAtSymbol() {
-    //   // Assuming a tweet like "hello @me"
-    //   // isMentionned("me") should be true
-    //   // isMentionned("you") should be false
-    // }
-    @Test
-    void mockMention_lookAtSymbol() {
+isMentionned_lookForAtSymbol()
 
-        Twitter twitter = partialMockBuilder(Twitter.class)
-          .addMockedMethod("loadTweet")
-          .createMock();
+![image](https://github.com/mykolafc/seg3503_playground/assets/90726597/aeb081d6-65aa-4845-8f44-1f437e7642b6)
 
-        expect(twitter.loadTweet()).andReturn("hello @me").times(2);
-        replay(twitter);
 
-        boolean actual;
+isMentionned_dontReturnSubstringMatches()
 
-        actual = twitter.isMentionned("me");
-        assertEquals(true, actual);
+![image](https://github.com/mykolafc/seg3503_playground/assets/90726597/5c254176-18cd-4ca6-8920-9b735ca99104)
 
-        actual = twitter.isMentionned("you");
-        assertEquals(false, actual);
-    }
-    // @Test
-    // void isMentionned_dontReturnSubstringMatches() {
-    //   // Assuming a tweet like "hello @meat"
-    //   // isMentionned("me") should be false
-    //   // isMentionned("meat") should be true
-    // }
-    @Test
-    void mockMention_noReturnSubstringMatch() {
 
-        Twitter twitter = partialMockBuilder(Twitter.class)
-          .addMockedMethod("loadTweet")
-          .createMock();
+isMentionned_superStringNotFound()
 
-        expect(twitter.loadTweet()).andReturn("hello @meat").times(2);
-        replay(twitter);
+![image](https://github.com/mykolafc/seg3503_playground/assets/90726597/a99ebc43-e16f-4d83-a771-cde29f619ffa)
 
-        boolean actual;
 
-        actual = twitter.isMentionned("me");
-        assertEquals(false, actual);
+isMentionned_handleNull()
 
-        actual = twitter.isMentionned("meat");
-        assertEquals(true, actual);
-    }
-    // @Test
-    // void isMentionned_superStringNotFound() {
-    //   // Assuming a tweet like "hello @me"
-    //   // isMentionned("me") should be true
-    //   // isMentionned("meat") should be false
-    // }
-    @Test
-    void mockMention_noSuperstring() {
+![image](https://github.com/mykolafc/seg3503_playground/assets/90726597/10eb8bc0-fe17-46a6-a9ea-867200e0acd4)
 
-        Twitter twitter = partialMockBuilder(Twitter.class)
-          .addMockedMethod("loadTweet")
-          .createMock();
 
-        expect(twitter.loadTweet()).andReturn("hello @me").times(2);
-        replay(twitter);
+## Results of Tests:
+![image](https://github.com/mykolafc/seg3503_playground/assets/90726597/b4842aa7-ceea-47c0-9626-4962ae441be4)
 
-        boolean actual;
 
-        actual = twitter.isMentionned("me");
-        assertEquals(true, actual);
+## Analysis: 
+On remarque que la méthode loadTweet() a 3 résultats possibles soit "...@me", "...@you", null. 
 
-        actual = twitter.isMentionned("meat");
-        assertEquals(false, actual);
-    }
-    // @Test
-    // void isMentionned_handleNull() {
-    //   // Assuming no tweet is available (i.e. null)
-    //   // isMentionned("me") should be false
-    //   // isMentionned("meat") should be false
-    // }
-    @Test
-    void mockMention_null() {
+![image](https://github.com/mykolafc/seg3503_playground/assets/90726597/8ab8ee56-d1d9-47b3-aa8f-54883845d689)
 
-        Twitter twitter = partialMockBuilder(Twitter.class)
-          .addMockedMethod("loadTweet")
-          .createMock();
+Cependant, isMentionned() ne gère pas la possibilité d'avoir null ou un substring et pour ca les deux mèthodes on pas passé. Alors, on modifie le code de cela: 
 
-        expect(twitter.loadTweet()).andReturn(null).times(2);
-        replay(twitter);
+![image](https://github.com/mykolafc/seg3503_playground/assets/90726597/f0d6d6b4-0320-463a-9be2-5227b1d5b7b2)
 
-        boolean actual;
+À cela: 
 
-        actual = twitter.isMentionned("me");
-        assertEquals(false, actual);
+![image](https://github.com/mykolafc/seg3503_playground/assets/90726597/b92dde7c-0c7e-4360-b30c-2e512097b323)
 
-        actual = twitter.isMentionned("meat");
-        assertEquals(false, actual);
-    }
 
-Result before modification Twitter.java:
+## Results of Tests after isMentionned update:
+Après avoir modifié isMentionned on a constaté que isMentionned_superStringNotFound() et isMentionned_handleNull() fonctionnaient. Néanmoins, on a remarqué que actual_call() pouvait passer ou échouer de facon aléatoire à cause de la nature RANDOM dans la méthode loadTweet() invoqué par isMentionned() invoqué par actual_call() que faut que parfois ça c'est vrai et parfois faux.
 
-![image](https://github.com/Liv-j/SEG3503_playground/assets/68886940/791efc35-e127-470a-95cd-e69cebf8edc7)
 
-Modification/Analysis:
+![image](https://github.com/mykolafc/seg3503_playground/assets/90726597/b569b233-7511-431a-a5d0-f5de7c0d2d7a)
 
-As loadTweet() only have three possible outputs ("I am tweet that likes to talk about @me", "Hello to @you" or null) and IsMentionned(String name) does not consider the possibility that the parameter can be null or the "name" being a substring of the parameter, both the mockMention_noReturnSubstringMatch() and mockMention_null() failed. To remedy this, I modified the IsMentionned method so that it encompasses these cases (see below for implementation).
+![image](https://github.com/mykolafc/seg3503_playground/assets/90726597/d28bed46-19d0-42eb-a673-b3203e608b7b)
 
-![image](https://github.com/Liv-j/SEG3503_playground/assets/68886940/a4445bc6-9708-4b4b-847b-332d75949620)
 
-Result after modification to Twitter.java:
-
-With the previous modifications all tests pass. Though, actual_call() passes by random chance as it will only pass when r (random generated number) <= 0.45 because it will output "I am tweet that likes to talk about @me" (see loadTweet() implementation above).
-
-![image](https://github.com/Liv-j/SEG3503_playground/assets/68886940/b7b5c4bc-b2e5-439b-8302-d2fe9f18ec96)
 
