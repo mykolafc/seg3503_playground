@@ -5,6 +5,7 @@ public class Tic {
 	int rows;
 	int cols;
 	String turn;
+	
 	public Tic(int row, int col) {
 		board = new String[row][col];
 		rows = row;

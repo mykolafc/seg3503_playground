@@ -1,0 +1,10 @@
+{
+    "java.project.referencedLibraries": [
+        "lib/**/*.jar",
+        "C:\\Users\\carog\\Downloads\\junit-jupiter-api-5.2.0 (1).jar",
+        "C:\\Users\\carog\\Downloads\\junit-jupiter-engine-5.2.0 (2).jar",
+        "c:\\Users\\carog\\Downloads\\junit-platform-console-standalone-1.10.0-M1.jar",
+        "c:\\Users\\carog\\Downloads\\easymock-5.1.0\\original-easymock-5.1.0-sources.jar",
+        "c:\\Users\\carog\\Downloads\\easymock-5.1.0\\easymock-5.1.0.jar"
+    ]
+}
