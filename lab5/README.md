@@ -60,17 +60,21 @@ isMentionned_handleNull()
 
 ## Analysis: 
 On remarque que la méthode loadTweet() a 3 résultats possibles soit "...@me", "...@you", null. 
+
 ![image](https://github.com/mykolafc/seg3503_playground/assets/90726597/8ab8ee56-d1d9-47b3-aa8f-54883845d689)
 
 Cependant, isMentionned() ne gère pas la possibilité d'avoir null ou un substring et pour ca les deux mèthodes on pas passé. Alors, on modifie le code de cela: 
+
 ![image](https://github.com/mykolafc/seg3503_playground/assets/90726597/f0d6d6b4-0320-463a-9be2-5227b1d5b7b2)
 
 À cela: 
+
 ![image](https://github.com/mykolafc/seg3503_playground/assets/90726597/b92dde7c-0c7e-4360-b30c-2e512097b323)
 
 
 ## Results of Tests after isMentionned update:
 Après avoir modifié isMentionned on a constaté que isMentionned_superStringNotFound() et isMentionned_handleNull() fonctionnaient. Néanmoins, on a remarqué que actual_call() pouvait passer ou échouer de facon aléatoire à cause de la nature RANDOM dans la méthode loadTweet() invoqué par isMentionned() invoqué par actual_call() que faut que parfois ça c'est vrai et parfois faux.
+
 
 ![image](https://github.com/mykolafc/seg3503_playground/assets/90726597/b569b233-7511-431a-a5d0-f5de7c0d2d7a)
 
