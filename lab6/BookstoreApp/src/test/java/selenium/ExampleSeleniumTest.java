@@ -84,6 +84,17 @@ class ExampleSeleniumTest {
     assertEquals(expected, actual);
   }
 
+  @Test
+  void test4() {
+    WebElement search = driver.findElement(By.id("searchBtn"));
+    search.click();
+   
+    WebElement authors = driver.findElement(By.id("authors-hall001"));
+   
+    String actual = authors.getText();
+    assertEquals("Marty Hall and Larry Brown", actual);
+  }
+
   private String[] getWords(String s) {
     return s.split("\\s+");
   }
