@@ -17,6 +17,9 @@ Localhost:8080/Admin
 ![image](https://github.com/mykolafc/seg3503_playground/assets/90726597/58a1a2ae-f153-4b2a-8207-0d37f16b6e3d)
 
 
+Sign-in:
+![image](https://github.com/mykolafc/seg3503_playground/assets/90726597/25d8b033-d957-4e60-93e2-0c326a8a9e9d)
+
 
 ## Test supplémentaire de Selenium Web Driver
 
