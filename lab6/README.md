@@ -23,6 +23,13 @@ Sign-in:
 
 ## Test supplémentaire de Selenium Web Driver
 
+Test3: Test1-based but for the body of the HomePage
+![image](https://github.com/mykolafc/seg3503_playground/assets/90726597/7f481bfe-4f79-46fb-8034-aab33750a046)
+
+
+Test4: Check the first element after clicking the search (search button works)
+![image](https://github.com/mykolafc/seg3503_playground/assets/90726597/1ed4ceda-b984-498c-8f9b-df5d4c563c30)
+
 
 
 ## Les résultats (positifs) des tests
@@ -31,3 +38,4 @@ Avant:
 ![image](https://github.com/mykolafc/seg3503_playground/assets/90726597/e88f7371-c03f-4d75-8dc8-d2b0963582bf)
 
 Après: 
+https://media.discordapp.net/attachments/1111399394701488190/1129166310337687704/Screen_Shot_2023-07-13_at_5.43.41_PM.png?width=1207&height=513
