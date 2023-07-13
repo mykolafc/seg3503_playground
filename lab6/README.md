@@ -21,6 +21,11 @@ Sign-in:
 ![image](https://github.com/mykolafc/seg3503_playground/assets/90726597/25d8b033-d957-4e60-93e2-0c326a8a9e9d)
 
 
+Search:
+![image](https://github.com/mykolafc/seg3503_playground/assets/90726597/78a9b531-cf71-4cc3-bf6a-921977550596)
+
+
+
 ## Test supplémentaire de Selenium Web Driver
 
 Test3: Test1-based but for the body of the HomePage
@@ -38,4 +43,5 @@ Avant:
 ![image](https://github.com/mykolafc/seg3503_playground/assets/90726597/e88f7371-c03f-4d75-8dc8-d2b0963582bf)
 
 Après: 
-https://media.discordapp.net/attachments/1111399394701488190/1129166310337687704/Screen_Shot_2023-07-13_at_5.43.41_PM.png?width=1207&height=513
+![image](https://github.com/mykolafc/seg3503_playground/assets/90726597/51bdbd65-dbe2-4cdf-8a34-9814cde0ecce)
+
