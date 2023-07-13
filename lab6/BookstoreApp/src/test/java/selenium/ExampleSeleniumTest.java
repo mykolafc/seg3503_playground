@@ -76,6 +76,14 @@ class ExampleSeleniumTest {
     assertEquals(expected, getWords(actual)[0]);
   }
 
+  @Test
+  public void test3(){
+    WebElement bold = driver.findElement(By.cssSelector("i"));
+    String expected = "YamaZone";
+    String actual = bold.getText();
+    assertEquals(expected, actual);
+  }
+
   private String[] getWords(String s) {
     return s.split("\\s+");
   }
