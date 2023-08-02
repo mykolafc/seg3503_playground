@@ -18,7 +18,7 @@
 ![image](https://github.com/mykolafc/seg3503_playground/assets/90726597/db7f9d7b-ed15-4cd6-8184-d4eb9fb0c300)
 
 # Bugs corrigées 
-![image](https://github.com/mykolafc/seg3503_playground/assets/90726597/ffc01bfd-bb0d-4e74-8888-d6f95baea11f)
+![image](https://github.com/mykolafc/seg3503_playground/assets/90726597/55ac67ff-f9b7-421d-a4f1-b345f7a9bc80)
 
 # ANALYSE DES RÉSULTATS
 
@@ -73,3 +73,5 @@ Bug 3: Could be refactored into a named static inner class
 This class is an inner class, but does not use its embedded reference to the object which created it.  This reference makes the instances of the class larger, and may keep the reference to the creator object alive longer than necessary.  If possible, the class should be made into a static inner class. Since anonymous inner classes cannot be marked as static, doing this will require refactoring the inner class so that it is a named inner class.
 
 Bug kind and pattern: SIC - SIC_INNER_SHOULD_BE_STATIC_ANON
+
+Bug 18: 
