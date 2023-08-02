@@ -18,7 +18,7 @@
 ![image](https://github.com/mykolafc/seg3503_playground/assets/90726597/db7f9d7b-ed15-4cd6-8184-d4eb9fb0c300)
 
 # Bugs corrigées 
-![image](https://github.com/mykolafc/seg3503_playground/assets/90726597/55ac67ff-f9b7-421d-a4f1-b345f7a9bc80)
+![image](https://github.com/mykolafc/seg3503_playground/assets/90726597/5b5015fa-7041-4cd6-9b3a-51fc37067da2)
 
 # ANALYSE DES RÉSULTATS
 
@@ -74,4 +74,6 @@ This class is an inner class, but does not use its embedded reference to the obj
 
 Bug kind and pattern: SIC - SIC_INNER_SHOULD_BE_STATIC_ANON
 
-Bug 18: 
+Bug 18: Private method is never called
+![image](https://github.com/mykolafc/seg3503_playground/assets/90726597/a78083d3-2a5d-4d10-ae1f-f2d580904c85)
+When we ran the code to see the issues left after debugging a sudden new error appear, making the total 18. However, there was no method with the name setClearScreen in our code, so the issue should be solved, but it was still showing, the reason why we thought it might be "acting up". 
