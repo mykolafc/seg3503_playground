@@ -17,7 +17,7 @@
 # Total de bugs
 ![image](https://github.com/mykolafc/seg3503_playground/assets/90726597/db7f9d7b-ed15-4cd6-8184-d4eb9fb0c300)
 
-# Bugs corrigées 
+# Après corrections 
 ![image](https://github.com/mykolafc/seg3503_playground/assets/90726597/5b5015fa-7041-4cd6-9b3a-51fc37067da2)
 
 # ANALYSE DES RÉSULTATS
